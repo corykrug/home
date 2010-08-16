@@ -4,7 +4,6 @@ set shiftwidth=4
 set pastetoggle=<F3>
 set ignorecase hlsearch
 set history=400
-set noai
 
 set wrap
 set showmatch " Show matching braces
