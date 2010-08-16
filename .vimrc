@@ -16,7 +16,7 @@ au FileType python setlocal tabstop=4 expandtab " Python expand tabs to 4 spaces
 
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 
-"Set to auto read when a file is changed from the outside
+" Set to auto read when a file is changed from the outside
 set autoread
 
 
@@ -35,6 +35,6 @@ autocmd VimEnter *
     \ endif
 
 
-"Restore cursor to file position in previous editing session
+" Restore cursor to file position in previous editing session
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
