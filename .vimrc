@@ -20,21 +20,6 @@ set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 set autoread
 
 
-" Wild set of hacks to properly set the hostname and currently open file in
-" your screen window descriptions. Very brittle due to the vim "Thanks for
-" flying Vim" bug. And yes, it is a bug.
-
-let &titlestring = hostname() . " [vim: " . expand("%:t") . " ]"
-if &term == "screen"
-    set t_ts=^[k
-    set t_fs=^[\
-endif
-autocmd VimEnter *
-    \ if &term == "screen" || &term == "xterm" |
-    \ set title |
-    \ endif
-
-
 " Restore cursor to file position in previous editing session
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
