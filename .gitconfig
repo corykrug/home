@@ -1,2 +1,11 @@
 [core]
 	editor = vim
+[user]
+	name = Cory Krug
+	email = cory.krug@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[alias]
+	ci = commit
