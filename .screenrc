@@ -1,0 +1,6 @@
+shelltitle "$ |bash"
+autodetach on
+vbell on
+vbell_msg ""
+startup_message off
+defscrollback 5000
