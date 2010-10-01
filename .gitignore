@@ -1,6 +1,7 @@
 *
-!.vimrc
-!.gitignore
 !.gitconfig
+!.gitignore
 !.gitmodules
+!.screenrc
+!.vimrc
 !LICENSE
