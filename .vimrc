@@ -5,6 +5,11 @@ set pastetoggle=<F3>
 set ignorecase hlsearch
 set history=400
 
+"set listchars=tab:>-,trail:-
+"hi SpecialKey ctermfg=3 guifg=gray
+"set list
+
+
 set wrap
 set showmatch " Show matching braces
 
@@ -22,3 +27,6 @@ set autoread
 " Restore cursor to file position in previous editing session
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+" Detect blocks of PHP code
+au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
