@@ -8,3 +8,7 @@ defscrollback 5000
 # Let me use my terminals scroll bar to page up through the scrollback buffer
 termcapinfo xterm ti@:te@
 termcapinfo xterm-color ti@:te@
+
+
+# Redraw the full screen when I quit programs like vi
+altscreen on
