@@ -1,3 +1,4 @@
+" Obtained from https://github.com/garybernhardt/dotfiles
 " Based on
 runtime colors/ir_black.vim
 
