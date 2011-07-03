@@ -5,6 +5,10 @@ set pastetoggle=<F3>
 set ignorecase hlsearch
 set history=400
 
+" Color scheme
+set t_Co=256
+colorscheme grb4
+
 "set listchars=tab:>-,trail:-
 "hi SpecialKey ctermfg=3 guifg=gray
 "set list
