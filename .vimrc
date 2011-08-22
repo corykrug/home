@@ -7,7 +7,7 @@ set history=400
 
 " Color scheme
 "set t_Co=256
-"colorscheme twilight256
+colorscheme Tomorrow-Night
 
 "set listchars=tab:>-,trail:-
 "hi SpecialKey ctermfg=3 guifg=gray
