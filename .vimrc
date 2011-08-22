@@ -6,7 +6,7 @@ set ignorecase hlsearch
 set history=400
 
 " Color scheme
-"set t_Co=256
+set t_Co=256
 colorscheme Tomorrow-Night
 
 "set listchars=tab:>-,trail:-
