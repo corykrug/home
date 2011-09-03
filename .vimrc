@@ -9,10 +9,7 @@ set history=400
 set t_Co=256
 colorscheme Tomorrow-Night
 
-"set listchars=tab:>-,trail:-
-"hi SpecialKey ctermfg=3 guifg=gray
-"set list
-
+" Highlight characters that go over the 80-character mark
 highlight OverLength ctermbg=darkgrey ctermfg=darkgrey  guibg=#545454
 match OverLength /\%81v.\+/
 
