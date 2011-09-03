@@ -13,6 +13,8 @@ colorscheme Tomorrow-Night
 "hi SpecialKey ctermfg=3 guifg=gray
 "set list
 
+highlight OverLength ctermbg=darkgrey ctermfg=darkgrey  guibg=#545454
+match OverLength /\%81v.\+/
 
 set wrap
 set showmatch " Show matching braces
