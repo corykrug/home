@@ -4,6 +4,7 @@ set shiftwidth=4
 set pastetoggle=<F3>
 set ignorecase hlsearch
 set history=400
+set mouse=a
 
 " Color scheme
 set t_Co=256
