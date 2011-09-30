@@ -1,7 +1,5 @@
 syntax on
 
-colorscheme Tomorrow-Night
-
 set autoread " Set to auto read when a file is changes
 set ai " Auto indent
 set history=400
@@ -28,3 +26,5 @@ au FileType python setlocal tabstop=4 expandtab
 
 " Detect blocks of PHP code
 au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
+
+colorscheme Tomorrow-Night
