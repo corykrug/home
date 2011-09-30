@@ -1,32 +1,28 @@
 syntax on
-set tabstop=4
-set shiftwidth=4
-set pastetoggle=<F3>
-set ignorecase hlsearch
+
+set autoread " Set to auto read when a file is changes
+set ai " Auto indent
 set history=400
-set mouse=a
+set ignorecase hlsearch
+"set mouse=a
+set pastetoggle=<F3>
+set si " Smart indent
+set shiftwidth=4
+set showmatch " Show matching braces
+set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
+set t_Co=256
+set tabstop=4
+set wrap
+
 
 " Color scheme
-set t_Co=256
 colorscheme Tomorrow-Night
 
 " Highlight characters that go over the 80-character mark
 highlight OverLength ctermbg=darkgrey ctermfg=darkgrey  guibg=#545454
 match OverLength /\%81v.\+/
 
-set wrap
-set showmatch " Show matching braces
-
-set ai " Auto indent
-set si " Smart indent
-
 au FileType python setlocal tabstop=4 expandtab " Python expand tabs to 4 spaces
-
-set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
-
-" Set to auto read when a file is changed from the outside
-set autoread
-
 
 " Restore cursor to file position in previous editing session
 set viminfo='10,\"100,:20,%,n~/.viminfo
