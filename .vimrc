@@ -6,6 +6,7 @@ set history=400
 set ignorecase hlsearch
 set pastetoggle=<F3>
 set si " Smart indent
+set softtabstop=4
 set shiftwidth=4
 set showmatch " Show matching braces
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
