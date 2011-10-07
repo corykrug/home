@@ -29,4 +29,4 @@ colorscheme Tomorrow-Night
 
 " Highlight characters that go over the 80-character mark
 highlight OverLength ctermbg=darkgrey ctermfg=darkgrey  guibg=#545454
-match OverLength /\%81v.\+/
+match OverLength /\%121v.\+/
