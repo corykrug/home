@@ -14,10 +14,6 @@ set t_Co=256
 set tabstop=4
 set wrap
 
-" Highlight characters that go over the 80-character mark
-highlight OverLength ctermbg=darkgrey ctermfg=darkgrey  guibg=#545454
-match OverLength /\%81v.\+/
-
 " Restore cursor to file position in previous editing session
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
@@ -30,3 +26,7 @@ au FileType php setlocal tabstop=4 expandtab
 au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
 
 colorscheme Tomorrow-Night
+
+" Highlight characters that go over the 80-character mark
+highlight OverLength ctermbg=darkgrey ctermfg=darkgrey  guibg=#545454
+match OverLength /\%81v.\+/
