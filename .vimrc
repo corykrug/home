@@ -18,12 +18,12 @@ set wrap
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
+" Detect blocks of PHP code
+au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
+
 " Python expand tabs to 4 spaces
 au FileType python setlocal tabstop=4 expandtab
 au FileType php setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-
-" Detect blocks of PHP code
-au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
 
 colorscheme Tomorrow-Night
 
