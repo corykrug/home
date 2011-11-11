@@ -20,7 +20,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
 " Python expand tabs to 4 spaces
 au FileType python setlocal tabstop=4 expandtab
-au FileType php setlocal tabstop=4 expandtab
+au FileType php setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 
 " Detect blocks of PHP code
 au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
