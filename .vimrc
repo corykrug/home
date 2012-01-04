@@ -30,3 +30,13 @@ colorscheme Tomorrow-Night
 " Highlight characters that go over the 80-character mark
 highlight OverLength ctermbg=darkgrey ctermfg=darkgrey  guibg=#545454
 match OverLength /\%121v.\+/
+
+" Hightlight extra whitespace
+highlight ExtraWhitespace ctermbg=darkgreen
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+
