@@ -14,8 +14,8 @@ set t_Co=256
 set tabstop=4
 set nowrap
 
-nmap <A-[> :tabprevious<CR>
-nmap <A-]> :tabnext<CR>
+nmap <C-H> :tabprevious<CR>
+nmap <C-L> :tabnext<CR>
 
 let mapleader = ","
 let g:CommandTMaxFiles=25000
