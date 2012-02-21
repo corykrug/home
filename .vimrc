@@ -18,6 +18,9 @@ set wrap
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
+" CoffeeScript
+au BufNewFile,BufReadPost *.coffee setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+
 " Detect blocks of PHP code
 au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
 
@@ -38,5 +41,3 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
-
