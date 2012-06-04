@@ -13,6 +13,8 @@ set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 set t_Co=256
 set tabstop=4
 set nowrap
+set expandtab
+set showtabline=2
 
 nmap <C-H> :tabprevious<CR>
 nmap <C-L> :tabnext<CR>
