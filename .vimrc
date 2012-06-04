@@ -27,6 +27,9 @@ let g:CommandTAcceptSelectionTabMap="<CR>"
 set viminfo='10,\"100,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
+" CoffeeScript
+au BufNewFile,BufReadPost *.coffee setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+
 " Detect file changes
 au FileChangedShell * echo "Warning: File changed on disk"
 
