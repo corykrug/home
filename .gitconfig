@@ -9,3 +9,8 @@
 	status = auto
 [alias]
 	ci = commit
+	st = status
+	co = checkout
+	ap = add -p
+	b = branch
+	am = commit --amend
