@@ -40,6 +40,9 @@ au BufNewFile,BufRead * if match(getline(1,2), "^<?") >= 0 | setf php | endif
 au FileType python setlocal tabstop=4 expandtab
 au FileType php setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 
+" Makefile noexpand tabs
+autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
+
 colorscheme Tomorrow-Night
 
 " Highlight characters that go over the 80-character mark
